@@ -1,0 +1,70 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+header{
+	height: 90px;
+	background: linear-gradient(#fff,#ddd);
+}
+#left{
+	margin: 30px 0px 0px 120px;
+	float: left;
+}
+nav{
+	margin: 40px 0px 0px 60px;
+	float: left;
+}
+li{
+	list-style: none;
+	float: left;
+	font-size: 20px;
+}
+li a{
+	margin: 0px 10px;
+	color: black;
+	text-decoration: none;
+}
+li a:hover{
+	color: red;
+}
+#pic1{
+	background: url(images/header_03.png) no-repeat;
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	animation: spread 0.6s linear both;
+}
+#pic2{
+	background: url(images/header_07.png) no-repeat;
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	animation: spread 0.6s linear both;
+}
+li a:hover #pic1{
+	background: url(images/header_05.png) no-repeat;
+	animation: spread 0.3s linear both;
+}
+li a:hover #pic2{
+	background: url(images/header_09.png) no-repeat;
+	animation: spread 0.3s linear both;
+}
+@keyframes spread{
+	0%{width: 0px;}
+	33%{width: 23px;}
+	66%{width: 46px;}
+	100%{width: 69px;}
+}
+#right{
+	float: left;
+	margin: 40px 0px 0px 200px;
+}
+#right a{
+	margin-left: 14px;
+}
+#right a:hover img{
+	transform: rotate(360deg);
+	transition: all 0.3s linear;
+}

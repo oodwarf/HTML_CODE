@@ -1,0 +1,106 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#box{
+	width: 200px;
+	height: 200px;
+	margin: 200px auto;
+	position: relative;
+	transform-style: preserve-3d;
+	/* transform: rotate3d(1,1,0,-45deg); */
+	animation: spread 10s linear infinite;
+}
+@keyframes spread{
+	from{transform: rotateX(0deg) rotateY(0deg);}
+	to{transform: rotateX(360deg) rotateY(360deg);}
+}
+#box div{
+	position: absolute;
+}
+#box span{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.out{
+	width: 200px;
+	height: 200px;
+	opacity: 0.6;
+}
+.in{
+	width: 100px;
+	height: 100px;
+}
+#front_out{
+	transform: translateZ(100px);
+}
+#back_out{
+	transform: translateZ(-100px);
+}
+#left_out{
+	transform: translateX(-100px) rotateY(90deg);
+}
+#right_out{
+	transform: translateX(100px) rotateY(90deg);
+}
+#top_out{
+	transform: translateY(-100px) rotateX(90deg);
+}
+#bottom_out{
+	transform: translateY(100px) rotateX(90deg);
+}
+#front_in{
+	transform: translateZ(50px);
+}
+#back_in{
+	transform: translateZ(-50px);
+}
+#left_in{
+	transform: translateX(-50px) rotateY(90deg);
+}
+#right_in{
+	transform: translateX(50px) rotateY(90deg);
+}
+#top_in{
+	transform: translateY(-50px) rotateX(90deg);
+}
+#bottom_in{
+	transform: translateY(50px) rotateX(90deg);
+}
+#box:hover #front_out{
+	transform: translateZ(200px);
+}
+#box:hover #back_out{
+	transform: translateZ(-200px);
+}
+#box:hover #left_out{
+	transform: translateX(-200px) rotateY(90deg);
+}
+#box:hover #right_out{
+	transform: translateX(200px) rotateY(90deg);
+}
+#box:hover #top_out{
+	transform: translateY(-200px) rotateX(90deg);
+}
+#box:hover #bottom_out{
+	transform: translateY(200px) rotateX(90deg);
+}
+#box:hover #front_in{
+	transform: translateZ(100px);
+}
+#box:hover #back_in{
+	transform: translateZ(-100px);
+}
+#box:hover #left_in{
+	transform: translateX(-100px) rotateY(90deg);
+}
+#box:hover #right_in{
+	transform: translateX(100px) rotateY(90deg);
+}
+#box:hover #top_in{
+	transform: translateY(-100px) rotateX(90deg);
+}
+#box:hover #bottom_in{
+	transform: translateY(100px) rotateX(90deg);
+}
